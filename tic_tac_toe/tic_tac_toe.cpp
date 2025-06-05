@@ -3,10 +3,7 @@
 
 void TicTacToe::initializeGame() {
 	// initialize board;
-	int board_size;
-	std::cout << "Enter board size : ";
-	std::cin >> board_size;
-	m_board = new Board(board_size);
+	m_board = new Board();
 	// initialize players;
 	int players_count;
 	std::cout << "Enter number of players : ";
