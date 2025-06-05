@@ -10,22 +10,7 @@ void TicTacToe::initializeGame() {
 	std::cin >> players_count;
 	std::set<char> used_piece_symbols;
 	for (int i=0; i<players_count; i++) {
-		char piece_symbol;
-		std::string player_name;
-		std::cout << "Enter player name : ";
-		std::cin >> player_name;
-		while (true) {
-			std::cout << "Enter piece symbol for current player : ";
-			std::cin >> piece_symbol;
-			if (!used_piece_symbols.count(piece_symbol)) {
-				used_piece_symbols.insert(piece_symbol);
-				break;
-			} else {
-				std::cout << "Entered piece symbol is already choosen\n";
-			}
-		}
-		Piece *piece = new Piece(piece_symbol);
-		Player *player = new Player(player_name, piece);
+		Player *player = new Player();
 		m_players.push_back(player);
 	}
 }

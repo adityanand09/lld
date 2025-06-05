@@ -1,8 +1,9 @@
 #include "player.h"
 
-Player::Player(std::string player_name, Piece* piece) {
-	m_player_name = player_name;
-	m_piece = piece;
+Player::Player() {
+	std::cout << "Enter player name : ";
+	std::cin >> m_player_name;
+	m_piece = new Piece();
 }
 
 Piece* Player::getPiece() {
