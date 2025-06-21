@@ -1,0 +1,3 @@
+#include "elevator_controller_request_handler/elevator_controller_request_processor.h"
+
+ElevatorControllerRequestProcessor::ElevatorControllerRequestProcessor() {}
