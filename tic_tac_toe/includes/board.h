@@ -13,7 +13,7 @@ private:
 	std::vector<std::vector<Piece*>> m_cells;
 
 public:
-	Board();
+	Board(int size);
 
 	bool addPiece(int row, int col, Piece* piece);
 

@@ -10,7 +10,7 @@ private:
 	std::string m_player_name;
 	Piece* m_piece;
 public:
-	Player();
+	Player(std::string player_name, Piece* piece);
 
 	Piece* getPiece();
 

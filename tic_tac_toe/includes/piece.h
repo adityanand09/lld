@@ -9,7 +9,7 @@ private:
 	char m_piece_symbol;
 	inline static std::set<char> m_used_symbols;
 public:
-	Piece();
+	Piece(char piece_symbol);
 
 	char getPieceSymbol();
 };

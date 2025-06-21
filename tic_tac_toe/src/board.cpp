@@ -1,8 +1,7 @@
 #include "board.h"
 
-Board::Board() {
-	std::cout << "Enter board size : ";
-	std::cin >> m_size;
+Board::Board(int size) {
+	m_size = size;
 	m_cells.resize(m_size);
 	for (auto &row : m_cells) {
 		row.resize(m_size);
