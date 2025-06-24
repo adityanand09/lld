@@ -10,7 +10,7 @@ To run the application :
 Windows :
 	
 	In command prompt run : mingw32-make (from the directory in which the app is)
-	It will build the project files and creates a executable snake_and_ladder.exe
-	Launch snake_and_ladder.exe
+	It will build the project files and creates a executable vending_machine.exe
+	Launch vending_machine.exe
 
 	NOTE : executable is built with debug symbols, you can debug using gdb.
